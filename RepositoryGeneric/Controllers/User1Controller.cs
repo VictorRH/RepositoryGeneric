@@ -27,6 +27,7 @@ namespace RepositoryGeneric.Controllers
         }
         [HttpPost("user2")]
         public async Task<ActionResult<ResponseUserDto>> POst2(ResponseUserDto model)
+        
         {
             var responseRepository2 = await repository2.ResponseUserAdmin2(model.Messag2);
 
