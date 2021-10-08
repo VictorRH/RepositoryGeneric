@@ -37,5 +37,13 @@ namespace RepositoryGeneric.Controllers
 
             return admins;
         }
+        //como usar el RepositoryUserAdmin
+        [HttpGet("useradmins")]
+        public async Task<IEnumerable<User>> GetUserAdmins()
+        {
+            var admins = await repo.GetAdminsAsync();
+
+            return admins;
+        }
     }
 }
