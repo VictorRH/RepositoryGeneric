@@ -27,8 +27,7 @@ namespace RepositoryGeneric
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddTransient<IRepository1, RepositoryUser1>();
-            services.AddTransient<IRepository2, RepositoryUser2>();
+            services.AddScoped<IRepositoryUser, RepositoryUser>();
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
