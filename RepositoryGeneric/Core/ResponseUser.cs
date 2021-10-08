@@ -1,13 +1,8 @@
 ﻿namespace RepositoryGeneric.Core
 {
-    public class ResponseUser
+    public class Response
     {
-
-        public class ResponseUserRoot
-        {
-            public string Message { get; set; }
-            public string Messag2 { get; set; }
-        }
+        public bool Succeed { get; set; }
+        public string Message { get; set; }
     }
-
 }
