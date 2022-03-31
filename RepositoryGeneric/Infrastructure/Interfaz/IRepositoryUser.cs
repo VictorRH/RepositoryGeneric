@@ -8,6 +8,6 @@ namespace RepositoryGeneric.Infrastructure.Interfaz
     public interface IRepositoryUser : IRepository<User>
     {
         //Este metodo ya no es del repo generico sino especifico del repo de Users
-        Task<IEnumerable<User>> GetAdminsAsync();
+        Task<IEnumerable<User?>> GetAdminsAsync();
     }
 }

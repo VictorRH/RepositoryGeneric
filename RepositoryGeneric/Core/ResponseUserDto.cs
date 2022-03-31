@@ -2,7 +2,7 @@
 {
     public class RequestUser
     {
-        public string Message { get; set; }
+        public string? Message { get; set; }
     }
 
 }
